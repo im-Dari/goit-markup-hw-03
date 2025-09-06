@@ -1,0 +1,390 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Контейнер */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Header */
+header {
+  border-bottom: 1px solid #e0e0e0;
+  height: 72px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-start;  /* початок по X */
+  align-items: center;
+  position: relative;
+  height: 72px;
+}
+
+/* Логотип */
+.logo-header {
+  position: absolute;
+  left: 156px;   /* x:156 */
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  margin-top: 24px; /* щоб кнопка відійшла вниз */
+
+}
+
+.logo-header span {
+  color: #2e2f42;
+}
+
+/* Навігація */
+.main-nav {
+  position: absolute;
+  left: 347px;    /* x:347 */
+  display: flex;
+  gap: 40px;      /* розрив між Studio / Portfolio / Contacts */
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  margin-top: 24px; /* щоб кнопка відійшла вниз */
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 24px;  /* y = 24 */
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-decoration: none;
+}
+
+/* Контакти */
+.header-contact ul {
+  position: absolute;
+  left: 940px;   /* email x=940 */
+  display: flex;
+  gap: 40px;    /* телефон x=1133 → 1133-940 ≈ 193 */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 24px; /* щоб кнопка відійшла вниз */
+}
+
+.contact-link {
+  line-height: 24px;  /* y = 24 */
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-decoration: none;
+}
+
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+
+/* Hero section */
+.hero-section {
+  background-color: #2e2f42;
+  text-align: center;
+  padding: 188px 0; /* формує висоту секції */
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  max-width: 496px;
+  margin: 0 auto 32px;
+}
+
+.hero-button {
+  background-color: #4D5AE5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px; /* замість height/width */
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404BBF;
+}
+
+
+/* Секція Services */
+.services-section {
+  background-color: #ffffff;
+  padding: 120px 156px; /* верх/низ = 120, ліво/право = 156 */
+}
+
+/* Список блоків */
+.service-list {
+  display: flex;              /* горизонтальне розташування */
+  justify-content: center;    /* по центру секції */
+  gap: 24px;                  /* відстань між блоками */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;            /* дозволяє блокам переноситись на новий рядок при маленькому екрані */
+}
+
+/* Секція Services */
+.services-section {
+  background-color: #ffffff;
+  padding: 120px 156px; /* верх/низ = 120, ліво/право = 156 */
+}
+
+/* Список блоків */
+.service-list {
+  display: flex;              /* горизонтальне розташування */
+  justify-content: center;    /* по центру секції */
+  gap: 24px;                  /* відстань між блоками */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;            /* дозволяє блокам переноситись на новий рядок при маленькому екрані */
+}
+
+/* Кожен блок */
+.service-item {
+  background-color: #FFFFFF;  /* білий фон */
+  width: 264px;
+  min-height: 104px;          /* hug висота під контент */
+  padding: 16px;              /* внутрішні відступи */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;         /* за бажанням */
+}
+
+
+/* Заголовок блоку */
+.service-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin: 0 0 8px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+
+/* Текст блоку */
+.service-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin: 0;
+}
+
+
+/* Team section */
+.team-section {
+  background-color: #F4F4FD;
+  padding: 120px 156px;  /* верх/низ = 120px, ліво/право = 156px */
+  text-align: center;
+}
+
+/* Заголовок */
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin: 0 0 72px 0; /* відступ після заголовку до блоків */
+}
+
+/* Список учасників */
+.team-list {
+  display: flex;
+  justify-content: center;  /* блоки по центру секції */
+  gap: 24px;                /* відстань між блоками */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;          /* для адаптивності */
+}
+
+/* Кожен блок */
+.team-item {
+  background-color: #FFFFFF;
+  width: 264px;              
+  min-height: 104px;         
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px 16px 16px; /* верхній падінг = 0, нижній = 16px, ліво/право = 16px */
+  box-sizing: border-box;
+  /* border-radius прибрано, якщо не потрібен */
+}
+
+/* Фото */
+.team-item img {
+  width: 264px;              
+  height: auto;
+  border-radius: 0;           /* прибираємо заокруглення */
+  margin-bottom: 16px;        /* відступ до імені */
+}
+
+/* Ім’я учасника */
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin: 0 0 8px 0;
+}
+
+/* Посада */
+.team-role {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin: 0;
+}
+
+/* Portfolio section */
+.portfolio-section {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 120px 156px; /* верх/низ = 120, ліво/право = 156 */
+}
+
+/* Заголовок */
+.portfolio-title {
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin: 0 0 72px 0; /* відступ до першого ряду карток */
+}
+
+/* Список карток */
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(3, 360px); /* по 3 картки в рядку */
+  justify-content: center;                  /* центруємо ряди по секції */
+  gap: 48px 24px;                           /* вертикальний gap = 48px, горизонтальний gap = 24px */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Картка */
+.portfolio-item {
+  background-color: #FFFFFF;
+  width: 360px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;               
+  box-sizing: border-box;
+}
+
+/* Фото картки */
+.portfolio-item img {
+  width: 100%;               /* підлаштовується під ширину картки */
+  height: 260px;             /* hug висота фото */
+  object-fit: cover;
+  margin-bottom: 16px;
+  border-radius: 0;          /* без заокруглень */
+}
+
+/* Заголовок картки */
+.portfolio-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin: 10px 0 5px;
+}
+
+/* Текст картки */
+.portfolio-item-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin: 0;
+}
+
+
+/* Footer */
+.footer-section {
+  background-color: #2e2f42;
+  height: 312px;               /* висота секції */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     /* вертикальне вирівнювання */
+  align-items: flex-start;     /* вирівнювання по лівому краю */
+  padding: 100px 1020px 100px 156px; /* top, right, bottom, left */
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Логотип */
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;           /* hug = 24px */
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  margin-bottom: 16px;         /* відступ до тексту */
+}
+
+/* Частина логотипу з іншим кольором */
+.footer-logo .footer-span {
+  color: #f4f4fd;
+}
+
+/* Текст блоку */
+.footer-text {
+  width: 264px;                /* ширина текстового блоку */
+  height: 72px;                /* висота тексту */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  margin: 0;
+}
