@@ -207,6 +207,9 @@ img {
   box-sizing: border-box;
   overflow: hidden; 
 }
+.team-item:first-child {
+  border-radius: 0 0 4px 4px; 
+}
 
 .team-item img {
   width: 100%;
