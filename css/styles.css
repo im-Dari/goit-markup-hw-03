@@ -2,6 +2,8 @@
 h1, h2, h3, h4, h5, h6, p {
   margin: 0; 
 }
+body{font-family: Roboto,sans-serif;}
+
 ul {
   margin: 0;   
   padding: 0;  
@@ -26,7 +28,6 @@ img {
 /* ================== HEADER ================== */
 .site-header {
   border-bottom: 1px solid #e7e9fc; 
-  padding: 24px 0; 
 }
 
 .header-container {
@@ -74,6 +75,7 @@ img {
   font-weight: 500;
   line-height: 24px;
   padding: 24px 0; 
+  display: block;
 }
 
 .nav-link:hover,
@@ -87,6 +89,9 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.contacts {
+  font-style: normal;
 }
 
 .contacts-link {
@@ -116,7 +121,7 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 496px;
-  margin: 0 auto 32px; 
+  margin: 0 auto 48px; 
 }
 
 .hero-button {
@@ -157,7 +162,6 @@ img {
 .service-item {
   flex: 1 1 calc((100% - 3 * 24px) / 4); 
   background-color: #FFFFFF;
-  padding: 16px; 
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
